@@ -16,8 +16,10 @@ namespace CiderAndCode.Web.Controllers
         public HttpResponseMessage GetUserNameList()
         {
             var db = new AppDbContext();
-            var users = db.Users.Select(user => new UserNameResult { Id = user.Id, Name = user.Name });
+
+            var users = db.Users.Select(user => new UserNameResult {Id = user.Id, Name = user.Name});
+
             return Request.CreateResponse(HttpStatusCode.OK, users);
-         }
+        }
     }
 }

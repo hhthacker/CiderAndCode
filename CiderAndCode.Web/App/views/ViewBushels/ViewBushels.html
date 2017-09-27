@@ -1,6 +1,7 @@
-﻿<div class="jumbotron">All meh Bushelz!!</div>
-<div ng-repeat="bushel in bushels" ng-show="true">
-    {{bushel.NumberOfBushels}} bushels of {{bushel.Type}}
-    <div>{{bushel.Ripeness = true}}{{bushel.Pressed}}</div>
-    <button ng-click="stealApples(bushel.Id)">Steal Em Apples</button>
+﻿<div class="jumbotron">all deh appling bushelz!!</div>
+<div ng-repeat="bushel in bushels">
+    {{bushel.NumberOfBushels}} {{bushel.Type}} bushizzles!!
+    <span>Diz apps r {{bushel.Ripeness == 'true' ? 'ripe' : 'under~ripe'}}!</span>
+    <span> And rly {{bushel.Pressed == 'true' ? 'cidery' : 'holy whole'}}!</span>
+    <button ng-click="stealApples(bushel.Id)">imma steal dat</button>
 </div>

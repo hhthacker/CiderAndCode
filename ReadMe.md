@@ -3,6 +3,8 @@
 ### Technology is our Core
 
 - [x] Pick Apples from the on site orchard
+- [x] View bushels of apples
+- [x] Steal apples (stealing is "bad").
 - [ ] Donate a bushel of apples
 - [ ] Make Cider
 - [ ] Filter Cider into Juice

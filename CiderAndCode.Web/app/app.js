@@ -1,1 +1,1 @@
-﻿var app = angular.module("CiderAndCode", ["ngRoute"]);
+﻿var app = angular.module('CiderAndCode', ['ngRoute']);

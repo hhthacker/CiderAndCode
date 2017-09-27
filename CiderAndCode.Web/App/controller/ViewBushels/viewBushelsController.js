@@ -5,6 +5,7 @@
     $http.get("/api/Bushels/list")
         .then(function (result) {
             $scope.bushels = result.data;
+            console.log("resultz", $scope.bushels);
         });
 
     $scope.stealApples = function (id) {

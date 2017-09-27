@@ -159,6 +159,7 @@
     <Compile Include="Controllers\CiderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PickApplesController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DataModels\AppDbContext.cs" />
     <Compile Include="DataModels\AppleFact.cs" />
     <Compile Include="DataModels\Bushel.cs" />
@@ -185,22 +186,42 @@
     <Compile Include="Migrations\201709200207205_messeduptastingnotes.Designer.cs">
       <DependentUpon>201709200207205_messeduptastingnotes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709231425155_stuff.cs" />
+    <Compile Include="Migrations\201709231425155_stuff.Designer.cs">
+      <DependentUpon>201709231425155_stuff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AppleResult.cs" />
     <Compile Include="ViewModels\ApplesPickedRequest.cs" />
+    <Compile Include="ViewModels\AllBushels.cs" />
+    <Compile Include="ViewModels\ViewBushelsRequest.cs" />
+    <Compile Include="ViewModels\UserNameResult.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.js" />
+    <Content Include="App\Appconfig.js" />
+    <Content Include="App\controller\PickApples\pickApplesController.js" />
+    <Content Include="App\controller\ViewBushels\viewBushelsController.js" />
+    <Content Include="App\views\PickApples\PickApples.html" />
+    <Content Include="App\views\ViewBushels\ViewBushels.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -249,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709200207205_messeduptastingnotes.resx">
       <DependentUpon>201709200207205_messeduptastingnotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709231425155_stuff.resx">
+      <DependentUpon>201709231425155_stuff.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

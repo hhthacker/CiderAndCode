@@ -1,0 +1,17 @@
+﻿<label for="appleType">Apple Type</label>
+<select id="appleType" type="number" ng-model="bushel.appleType">
+    <option value="0">CrabApple</option>
+    <option value="1">Macintosh</option>
+    <option value="2">GoldenDelicious</option>
+    <option value="3">GrannySmith</option>
+    <option value="4">Opal</option>
+    <option value="5">PinkLady</option>
+    <option value="6">HoneyCrisp</option>
+</select>
+<label for="numberOfBushels">Number of Bushels</label>
+<input id="numberOfBushels" type="number" ng-model="bushel.numberOfBushels" />
+<label for="userId">User ID</label>
+<select id="userId" type="number" ng-model="bushel.userId">
+    <option ng-repeat="user in users" value="{{user.Id}}">{{user.Name}}</option>
+</select>
+<button ng-click="pickApples()">Pick Em Apples</button>

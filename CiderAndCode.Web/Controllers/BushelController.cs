@@ -20,6 +20,14 @@ namespace CiderAndCode.Web.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, bushels);
         }
 
+        [HttpGet, Route("list")]
+        public HttpResponseMessage GetBushelList()
+        {
+            var db = new AppDbContext();
+            var bushels = db.Bushels.Select(bushel => new ViewBushelsRequest { Id = bushel.Id, Type = bushel.Type.ToString(), NumberOfBushels = bushel.Quantity, Ripeness = bushel.Ripe, Pressed = bushel.Pressed });
+            return Request.CreateResponse(HttpStatusCode.OK, bushels);
+        }
+
         [HttpDelete, Route("{id}")]
         public HttpResponseMessage StealApples(int id)
         {

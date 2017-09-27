@@ -44,9 +44,8 @@ namespace CiderAndCode.Web.Controllers
             {
                 db.SaveChanges();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                //log.error(ex);
                 Request.CreateErrorResponse(HttpStatusCode.InternalServerError,
                     "Couldn't make cider today, Machine is down for repairs.");
             }
